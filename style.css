@@ -1,0 +1,76 @@
+body{
+    margin: 0; /* remove default margin*/
+    font-family: sans-serif;
+    display: flex; /* bringing each item sequentially one after enother. if you want to test this delete the other flex attribute */
+    flex-direction: column;/* bring evrything to the center horizontally */
+    align-items: center;
+    /* to bring all the item to the center vertically we need to set the height of the body to the height of the screen*/
+    height: 100vh;
+    justify-content: center; /* to bring everything to the center vertically */ 
+    background-image: url("https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover; /*fix the multiple background*/
+    overflow: hidden; /* so that when we zoom out the site, there will be no overflow/scrolling bar*/
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.clock{
+    display: flex;
+}
+
+.clock div{
+    margin: 5px;
+    position: relative;
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    background:rgba(0, 0, 0, .3); /*by using rgba the text opacity won't be affected*/
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3); /*this set the shadow color and how  transparent it should be*/
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, .5) ;
+}
+
+/*in order to make the AM part to the bottom of the div containers we have to make its position absolute. But before that we have to make the div(clock) relative*/
+
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, .5);
+
+}
+
+.bottombar{
+    background: rgba(0, 0, 0, .4);
+    padding: 5px;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+.bottombar div {
+    font-size: 12px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3); /*the first and second number said how much offset it should have in x and y axises. the third is the blur radius*/
+   
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!--tells the browser to render the HTML codes as HTML5-->
+<html lang="en"> <!--specify the language of the text content on a website-->
+
+<head> <!--head contain metadata of the document that wont be shown on the page-->
+    <!-- Meta tag is used to add more metadata to your website -->
+    <meta charset="UTF-8"> <!-- UTF is recommended because it contains most of the letters -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--tells the internet browser to use the most recent rendering engine which is "edge"-->
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <!--"viewport tells the browser how to resize the page". Firstpart of the
+    content is sets the pages width to the screen size width.  Initial Sclae = initial zoom of the page-->
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Digital Clock</h2>
+    <div class="clock">
+        <div>
+            <span id="hour">00</span>
+            <span class="text">Hours
+        </div>
+        <div>
+            <span id="minutes">00</span>
+            <span class="text">Minute
+        </div>
+
+        <div>
+            <span id="seconds">00</span>
+            <span class="text">Second</span>
+        </div>
+
+        <div>
+            <span id="ampm">AM</span>
+        </div>
+    </div>
+    <div class="bottombar">
+        <div>This is made by Yudha Firdaus</div>
+    </div>
+    <script src="index.js"></script> 
+    <!--js file located in the same directory because of that we don't need to specify the folder-->
+</body>
+
+</html>
